@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primavera Coral</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(270deg, #1a1a2e, #16213e, #0f3460);
+            background-size: 600% 600%;
+            animation: gradient 15s ease infinite;
+            color: #fff;
+            text-align: center;
+        }
+
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            background: #fff;
+            padding: 10px 0;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Botões */
+        .botoes {
+            margin: 30px 0 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .botoes a {
+            text-decoration: none;
+            background: #2e7d32;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .botoes a:hover {
+            background: #1b5e20;
+        }
+
+        /* Texto aviso */
+        .aviso {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ffd54f;
+            padding: 0 10px;
+        }
+
+        /* Rodapé */
+        footer {
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        .contato {
+            margin-bottom: 5px;
+        }
+
+        .contato span {
+            display: inline-block;
+            margin: 0 8px;
+        }
+
+        .whatsapp-icon {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        .qr-code {
+            margin-top: 10px;
+        }
+
+        .qr-code img {
+            width: 90px;
+            height: 90px;
+            border-radius: 10px;
+            background: #fff;
+            padding: 5px;
+        }
+
+        .endereco {
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .botoes {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .aviso {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <img src="banner.png" alt="Primavera Coral">
+    </div>
+
+    <!-- Botões -->
+    <div class="botoes">
+        <a href="https://wa.me/5521987752525" target="_blank">WhatsApp</a>
+        <a href="https://www.instagram.com/primavera_coral/?hl=pt" target="_blank">Instagram</a>
+    </div>
+
+    <!-- Aviso -->
+    <div class="aviso">
+        Nossa página está em construção, para maiores detalhes siga-nos no Instagram
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="contato">
+            <span>📞 (21) 2564-3231</span> |
+            <span>
+                <a href="https://wa.me/5521987752525" target="_blank" style="color: #25D366; text-decoration: none;">
+                    📱 (21) 98775-2525
+                    <img class="whatsapp-icon" src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                </a>
+            </span>
+        </div>
+        <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/5521987752525" alt="QR Code WhatsApp">
+        </div>
+        <div class="endereco">
+            Rua Euclides Faria, 149 LJ - RAMOS
+        </div>
+    </footer>
+</body>
+</html>
